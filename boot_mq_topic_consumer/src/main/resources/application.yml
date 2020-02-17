@@ -1,0 +1,12 @@
+server:
+  port: 5566
+spring:
+  activemq:
+    broker-url: tcp://47.107.172.70:61616 # activemq 服务器地址
+    user: admin
+    password: admin
+  jms:
+    pub-sub-domain: true # false: topic true: topic
+
+# 自定义队列名称
+mytopic: boot-activemq-topic
